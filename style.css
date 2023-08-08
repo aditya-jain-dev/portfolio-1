@@ -101,7 +101,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin: 4rem auto;
+    margin: 7rem auto;
     padding: 0 1rem;
     padding-bottom: 9rem;
 }
@@ -497,7 +497,7 @@ nav{
 .skills-fade-text{
     font-size: 15em;
     position: absolute;
-    bottom:-23%;
+    bottom:-20%;
     left:0;
     user-select: none;
     overflow-y: hidden;
