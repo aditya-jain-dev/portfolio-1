@@ -169,7 +169,7 @@ nav{
 .btn-pink::before{
     content: "";
     position: absolute;   
-    background-color:#fff;                                   
+    background-color:#fff;    
     left: 0;
     bottom: 0;
     right: 0;
@@ -397,12 +397,14 @@ nav{
     transition:all 0.4s;
 }
 
-.project-content-left{ 
-    left:10%;
-}
+@media only screen and (min-width: 600px){
+    .project-content-left{ 
+        left:10%;
+    }
 
-.project-content-right{ 
-    right:0;
+    .project-content-right{ 
+        right:0;
+    }
 }
 
 .project-skills-container{
@@ -434,8 +436,16 @@ nav{
     align-items: center;
 }
 
+.btn-project{
+    text-decoration: none;
+}
+
 .btn-project:hover{
     border: none;
+}
+
+.btn-project:hover .icon{
+    color: black;
 }
 
 .icon{
@@ -443,6 +453,11 @@ nav{
     color:white;
     font-size:35px;
     transition:all 0.4s;
+}
+
+.p-icon{
+    margin-left: 0.5rem;
+    font-size:25px;
 }
 
 .icon:hover{
