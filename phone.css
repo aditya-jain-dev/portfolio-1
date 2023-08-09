@@ -59,6 +59,14 @@
         width: 100%;
     }
 
+    .user-image img{
+        width: 250px;
+    }
+
+    .faded-text{
+        font-size: 3rem;
+    }
+
     .project-section{
         width: 100%;
     }
@@ -94,7 +102,7 @@
     .project-content{
         align-items: center;
         justify-content: center;
-        bottom: 10%;
+        bottom: 5%;
     }
 
     .project-skills-container{
@@ -137,7 +145,7 @@
     .skills-container{
         flex-direction: column;
         width: 100%;
-        margin: 0 auto;
+        margin: 1rem auto;
         padding: 1rem;
     }
 
