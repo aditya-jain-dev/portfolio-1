@@ -19,6 +19,7 @@
         flex-direction: column;
         gap: 0;
         padding-bottom: 0;
+        margin-top: 1rem;
     }
 
     .faded-text{
@@ -27,8 +28,15 @@
 
     .hero-section-left{
         width: 100%;
-        gap: 1rem;
-        /* padding-bottom: 2rem; */
+        gap: 0.2rem;
+    }
+
+    .hero-section-heading{
+        font-size: 25px;
+    }
+
+    .herosection-sub-heading{
+        font-size: 25px;
     }
 
     .hero-section-description{
@@ -38,7 +46,7 @@
 
     .btn-group{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         margin-top: 20px;
         align-items: center;
@@ -46,12 +54,13 @@
     }
 
     .btn-pink{
-        width: 100%;
+        font-size: 16px;
+        padding: 0.8rem 1.2rem;
     }
 
     .hero-section-right{
         width: 100%;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .user-image{
