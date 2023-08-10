@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px){
+@media screen and (max-width: 670px){
 
     nav{
         justify-content: space-around;
@@ -79,7 +79,7 @@
     }
 
     .hero-section-right{
-        width: 100%;
+        width: 90%;
         margin-top: 40px;
     }
 
