@@ -23,13 +23,6 @@
     margin: 0 auto;
 }
 
-#navbar{
-    width: 100%;
-    position: relative;
-    top: 0;
-    background-color: white;
-}
-
 nav{
     padding-top: 1rem;
     display: flex;
@@ -60,7 +53,7 @@ nav{
 .nav-items{
     display: flex;
     gap: 2rem;
-    padding: 0 4em;
+    /* padding: 0 4em; */
 }
 
 .nav-items-name{
@@ -75,7 +68,7 @@ nav{
     color: black;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
     .nav-items>div:hover a{
         transition: 0.8s;
         color: var(--bgOrange);
@@ -172,7 +165,7 @@ nav .fa{
     text-decoration: none;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
 
     .btn-pink::before{
         content: "";
@@ -353,7 +346,7 @@ nav .fa{
     z-index:0;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
     .project-card::before{
         content:"";
         position:absolute;
@@ -408,7 +401,7 @@ nav .fa{
     transition:all 0.4s;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
     .project-content{
         left: 10%;
     }
@@ -447,7 +440,7 @@ nav .fa{
     text-decoration: none;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
 
     .btn-project:hover{
         border: none;
@@ -470,7 +463,7 @@ nav .fa{
     font-size:25px;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
     .icon:hover{
         color:var(--bgOrange);
     }
@@ -576,7 +569,7 @@ nav .fa{
     transition:all 0.5s;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
     .skills-logo:hover{
         transform:scale(1.2);
     }
