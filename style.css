@@ -63,36 +63,38 @@ nav{
     padding: 0 4em;
 }
 
-.nav-items div{
+.nav-items-name{
     font-size: 20px;
     font-weight: 500;
     
 }
 
-.nav-items div a{
+.nav-items-name a{
     text-decoration: none;
     cursor: pointer;
     color: black;
 }
 
-.nav-items>div:hover a{
-    transition: 0.8s;
-    color: var(--bgOrange);
-    font-weight: bold ;
-}
+@media only screen and (min-width: 600px){
+    .nav-items>div:hover a{
+        transition: 0.8s;
+        color: var(--bgOrange);
+        font-weight: bold ;
+    }
 
-.nav-items div::after {
-    content: "";
-    height: 2px;
-    width: 0%;
-    background: var(--bgOrange);
-    margin: auto;
-    display: block;
-    transition: 0.5s;
-}
+    .nav-items>div::after {
+        content: "";
+        height: 2px;
+        width: 0%;
+        background: var(--bgOrange);
+        margin: auto;
+        display: block;
+        transition: 0.5s;
+    }
 
-.nav-items div:hover::after{
-    width: 100%;
+    .nav-items>div:hover::after{
+        width: 100%;
+    }
 }
 
 nav .fa{
