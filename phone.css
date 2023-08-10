@@ -81,32 +81,34 @@
     }
 
     .project-card{
-        padding: 2%;
+        position: relative;
+        /* padding: 2%; */
         background-size: contain;
     }
 
     .project-number{
-        font-size: 80px;
+        font-size: 50px;
     }
 
     .project-number-right{
         right:0;
-        top:-45px;
+        top:-25px;
     }    
 
     .project-number-left{
         left:0;
-        top:-45px;
+        top:-25px;
     }
 
     .project-content{
+        position: absolute;
         align-items: center;
         justify-content: center;
         bottom: 5%;
     }
 
     .project-skills-container{
-        width: 80%;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }

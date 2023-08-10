@@ -166,27 +166,30 @@ nav{
     text-decoration: none;
 }
 
-.btn-pink::before{
-    content: "";
-    position: absolute;   
-    background-color:#fff;    
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 0.8s;
-}
+@media only screen and (min-width: 600px){
 
-.btn-pink:hover::before{
-    transform: scaleX(1);
-} 
+    .btn-pink::before{
+        content: "";
+        position: absolute;   
+        background-color:#fff;    
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.8s;
+    }
 
-.btn-pink:hover{
-    color: black;
-    border: solid 3px var(--bgOrange);
+    .btn-pink:hover::before{
+        transform: scaleX(1);
+    } 
+
+    .btn-pink:hover{
+        color: black;
+        border: solid 3px var(--bgOrange);
+    }
 }
 
 .hero-section-right{
@@ -344,22 +347,24 @@ nav{
     z-index:0;
 }
 
-.project-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
-    transform:scaleX(0);
-    transform-origin: left;
-    transition: all 0.4s;
-    z-index:1;
-}
+@media only screen and (min-width: 600px){
+    .project-card::before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+        transform:scaleX(0);
+        transform-origin: left;
+        transition: all 0.4s;
+        z-index:1;
+    }
 
-.project-card:hover::before{
-    transform:scaleX(1);
+    .project-card:hover::before{
+        transform:scaleX(1);
+    }
 }
 
 .project-number{
@@ -440,12 +445,15 @@ nav{
     text-decoration: none;
 }
 
-.btn-project:hover{
-    border: none;
-}
+@media only screen and (min-width: 600px){
 
-.btn-project:hover .icon{
-    color: black;
+    .btn-project:hover{
+        border: none;
+    }
+
+    .btn-project:hover .icon{
+        color: black;
+    }
 }
 
 .icon{
@@ -460,13 +468,17 @@ nav{
     font-size:25px;
 }
 
-.icon:hover{
-    color:var(--bgOrange);
+@media only screen and (min-width: 600px){
+    .icon:hover{
+        color:var(--bgOrange);
+    }
+
+    .project-card:hover .project-content{
+        transform:scale(1.1);
+    }
 }
 
-.project-card:hover .project-content{
-    transform:scale(1.1);
-}
+
 
 #project-2{
     background-image: url("./images/projects/Razorpay-Clone.jpg");
@@ -490,14 +502,14 @@ nav{
     position: relative;
     display: flex;
     padding: 5rem;
-    margin: 10rem auto;
+    margin: 5rem auto 15rem auto;
     gap: 30px;
 }
 
 .skills-fade-text{
     font-size: 15em;
     position: absolute;
-    bottom:-20%;
+    bottom:-50%;
     left:0;
     user-select: none;
     overflow-y: hidden;
@@ -562,8 +574,10 @@ nav{
     transition:all 0.5s;
 }
 
-.skills-logo:hover{
-    transform:scale(1.2);
+@media only screen and (min-width: 600px){
+    .skills-logo:hover{
+        transform:scale(1.2);
+    }
 }
 
 .cont-container{
