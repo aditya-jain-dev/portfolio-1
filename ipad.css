@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
     nav{
         justify-content: space-around;
     }
@@ -9,25 +9,31 @@
 
     .hero-section{
         width: 90%;
-        gap: 1rem;
+        gap: 2rem;
         padding-bottom: 12rem;
         margin-top: 8rem;
     }
 
     .faded-text{
+        font-size: 5rem;
         left: 1%;
     }
 
+    .hero-section-left{
+        gap: 1rem;
+    }
+
     .hero-section-heading{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .herosection-sub-heading{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .hero-section-description{
         text-align:justify;
+        width: 90%;
     }
 
     .btn-group{
@@ -39,9 +45,9 @@
         align-items: center;
     }
 
-    .ipad-resp-btn-group{
-        justify-content: left;
-        align-items: start;
+    .btn-pink{
+        font-size: 18px;
+        padding: 0.8rem 1.2rem;
     }
 
     .hero-section-right{
