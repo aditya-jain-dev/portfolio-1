@@ -3,23 +3,41 @@
         max-width: 320px;
     }
 
-    nav{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    .logo{
+        width: 30px;
     }
 
     .nav-items{
-        margin-top: 1rem;
-        padding: 0;
+        position: absolute;
+        top: 0;
+        right: -150px;
+        background: #f44336;
+        height: 100vh;
+        width: 150px;
+        text-align: left;
+        z-index: 150;
+        transition: 1s;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    
+    .nav-items div a{
+        color: white;
+    }
+
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
 
     .hero-section{
         flex-direction: column;
         gap: 0;
         padding-bottom: 0;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .faded-text{

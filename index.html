@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/img-round.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="phone.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="wrapper">
@@ -18,7 +20,8 @@
                     <img src="./images/logo-2.png" alt="" class="logo">
                     <div class="logo-text">ditya Jain</div>               
                 </a>
-                <div class="nav-items">
+                <div id="navLinks" class="nav-items">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
                     <div>
                         <a href="#projects">Projects</a>
                         <div class="nav-items-line"></div>
@@ -32,6 +35,7 @@
                         <div class="nav-items-line"></div>
                     </div>
                 </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
             </nav>
 
             <div class="hero-section">
@@ -289,6 +293,15 @@
       backSpeed: 80,
       backDelay: 1000,
     });
+
+    var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-150px";
+        }
     </script>
 </body>
 </html>
