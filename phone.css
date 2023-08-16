@@ -7,6 +7,13 @@
     .menu-toggle {
         display: block;
         z-index: 200;
+        /* position: fixed;
+        right: 2rem; */
+    }
+
+    .menu-toggle.active{
+        position: fixed;
+        right: 2rem;
     }
 
     .nav-items{
