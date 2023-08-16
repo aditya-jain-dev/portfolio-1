@@ -24,7 +24,7 @@
 }
 
 nav{
-    padding-top: 1rem;
+    padding: 1rem 2rem 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +48,32 @@ nav{
     margin-left: -0.2rem;
     font-size: 28px;
     font-weight: bolder;
+}
+
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* For animating the hamburger to X */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .nav-items{

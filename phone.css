@@ -1,37 +1,34 @@
 @media screen and (max-width: 670px){
 
-    nav{
-        justify-content: space-around;
-    }
-
     .logo{
         width: 30px;
     }
 
+    .menu-toggle {
+        display: block;
+        z-index: 200;
+    }
+
     .nav-items{
+        display: none;
         position: absolute;
         top: 0;
-        right: -150px;
+        right: 0;
         background: #f44336;
         height: 100vh;
         width: 150px;
         text-align: left;
         z-index: 150;
-        transition: 1s;
         flex-direction: column;
-        padding: 0 1rem;
+        padding: 7rem 1rem 0 1rem;
+    }
+
+    .nav-items.active {
+        display: flex;
     }
     
     .nav-items div a{
         color: white;
-    }
-
-    nav .fa{
-        display: block;
-        color: black;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
     }
 
     .hero-section{
@@ -213,14 +210,14 @@
     }
 
     .cont-heading{
-        font-size:4em;
+        font-size:3em;
         text-align: center;
         line-height: 1;
         margin-bottom: 2rem;
     }
 
     .cont-subHeading{
-        font-size:2rem;
+        font-size:1.8rem;
         margin: 0 2rem;
     }
 

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Portfolio</title>
+    <meta name="description" content="Embark on a journey through the projects and aspirations of an aspiring IT student. This portfolio showcases my dedication to learning, problem-solving skills, and enthusiasm for technology. From coding experiments to insights about the evolving IT landscape, join me as I explore the world of Information Technology with curiosity and innovation.">
+    <meta name="keywords" content="IT student, portfolio, technology, projects, coding, learning, problem-solving, innovation">
+    <meta name="author" content="Aditya Jain">
+    <title>My IT Portfolio - Aditya Jain</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/img-round.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="phone.css">
@@ -17,12 +20,20 @@
         <!-- ------ navbar and hero-section -------- -->
         <div id="container">
             <nav>
+                <!-- logo -->
                 <a href="#" class="logo-container">
                     <img src="./images/logo-2.png" alt="" class="logo">
                     <div class="logo-text">ditya Jain</div>               
                 </a>
+                <!-- hamburger bar -->
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <!-- nav links -->
                 <div id="navLinks" class="nav-items">
-                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <!-- <i class="fa fa-times" onclick="hidemenu()"></i> -->
                     <div class="nav-items-name">
                         <a href="#projects">Projects</a>
                         <div class="nav-items-line"></div>
@@ -36,7 +47,7 @@
                         <div class="nav-items-line"></div>
                     </div>
                 </div>
-                <i class="fa fa-bars" onclick="showmenu()"></i>
+                <!-- <i class="fa fa-bars" onclick="showmenu()"></i> -->
             </nav>
 
             <div class="hero-section">
@@ -51,7 +62,7 @@
                     </h2>
                     <p class="hero-section-description">I’m a B.Tech Final Year Computer Science student and here is my portfolio website. Here you’ll learn about my journey.</p>
                     <div class="btn-group ipad-resp-btn-group">
-                        <div class="btn-pink" id="btn"><a href="https://drive.google.com/file/d/1rAsujlLcNJQwEhYiZ5cXhPpTlT11-MaI/view?usp=sharing" target="_blank"></a>Download CV
+                        <div class="btn-pink" id="btn"><a href="https://drive.google.com/file/d/1Qgnm-dLmyTc-ZRn1tPAiRZ1nFz6aQBPz/view?usp=sharing" target="_blank"></a>Download CV
                         </div>
                         <div class="btn-pink" id="btn"><a href="#contact-me"></a>Hire Me</div>
                     </div>
@@ -141,10 +152,10 @@
                         <h2 class="project-heading">Discord Clone</h2>
                         <div class="project-subHeading">Designing a Discord clone website using HTML and Tailwind CSS while ensuring responsiveness involves creating a visually appealing and functional platform similar to Discord's interface.</div>
                         <div class="btn-group">
-                            <a href="#" target="_blank" class="btn-pink btn-project">Live Link
+                            <a href="./404.html" class="btn-pink btn-project">Live Link
                                 <i class="fa-solid fa-link icon p-icon"></i>
                             </a>
-                            <a href="#">
+                            <a href="./404.html">
                                 <i title="GitHubLink" class="fa-brands fa-github icon"></i>
                             </a>
                         </div>
@@ -292,14 +303,11 @@
       backDelay: 1000,
     });
 
-    var navLinks = document.getElementById("navLinks");
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav-items').classList.toggle('active');
+    });
 
-        function showmenu() {
-            navLinks.style.right = "0";
-        }
-        function hidemenu() {
-            navLinks.style.right = "-150px";
-        }
     </script>
 </body>
 </html>

@@ -1,8 +1,5 @@
 @media screen and (min-width: 671px) and (max-width: 1024px){
-    nav{
-        justify-content: space-around;
-    }
-
+   
     .nav-items{
         padding: 0;
     }
@@ -11,7 +8,7 @@
         width: 90%;
         gap: 2rem;
         padding-bottom: 12rem;
-        margin-top: 8rem;
+        margin-top: 4rem;
     }
 
     .faded-text{
